@@ -6,7 +6,7 @@ html, body {
 
 $color-red: #ff483d;
 $color-green: #63da3c;
-$color-gary: #e1e2e1;
+$color-equal: #e1e2e1;
 
 .red {
   color: #fff;
@@ -18,7 +18,7 @@ $color-gary: #e1e2e1;
   background: $color-green;
 }
 
-.gary {
+.equal {
   color: #000;
-  background: $color-gary;
+  background: $color-equal;
 }

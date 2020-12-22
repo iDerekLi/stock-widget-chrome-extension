@@ -3,12 +3,12 @@ import "./plugins/antd";
 import "./assets/style/global.scss";
 import App from "./App.vue";
 import router from "./router";
-// // import store from "./store";
+import store from "./store";
 
 Vue.config.productionTip = false;
-//
-new Vue({
+
+export default new Vue({
   router,
-  // store,
+  store,
   render: h => h(App)
-}).$mount("#app");
+});

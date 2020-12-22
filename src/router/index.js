@@ -1,23 +1,22 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import NotFount from "../views/error.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    redirect: "/popup.html"
+    redirect: "/index.html"
+  },
+  {
+    path: "/index.html",
+    name: "index",
+    component: () => import("../views/index.vue")
   },
   {
     path: "/popup.html",
     name: "popup",
     component: () => import("../views/popup.vue")
-  },
-  {
-    path: "*",
-    name: "error",
-    component: NotFount
   }
 ];
 

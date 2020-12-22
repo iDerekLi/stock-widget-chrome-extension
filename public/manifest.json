@@ -5,22 +5,22 @@
   "description": "股票小组件",
   "author": "Derek Li",
   "icons": {
-    "48": "logo.png",
-    "128": "logo.png"
+    "48": "icon.png",
+    "128": "icon.png",
+    "356": "icon.png"
   },
   "options_page": "popup.html",
   "browser_action": {
-    "default_icon": "logo.png",
+    "default_icon": "icon.png",
     "default_title": "股票小组件",
     "default_popup": "popup.html"
   },
   "permissions": [
     "webRequest",
     "webRequestBlocking",
-    "storage",
+    "cookies",
     "http://*/*",
-    "https://*/*",
-    "ws://*/*"
+    "https://*/*"
   ],
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
